@@ -11,14 +11,12 @@
 \item{formula}{model formula}
 }
 \description{
-The Persistence Operator Term
-}
-\details{
 This term accepts a model formula
 and produces the corresponding model for the
 post-dissolution/persistence network: effectively the network containing
 ties that persisted since the last time step.
-
+}
+\details{
 This is the equivalent of the old-style \code{dissolution} model. So
 a larger positive coefficient for \code{Persist()} operator means
 less dissolution. It

@@ -15,11 +15,7 @@ networks at the parameter configuration of interest is empty.}
 \item{log}{logical specifying if mean log age should be returned instead of mean age}
 }
 \description{
-Average age of an extant tie
-}
-\details{
 This term adds one statistic equaling the average, over all ties
-present in the network, of the amount of time elapsed since
-formation.
+present in the network, of the amount of time elapsed since formation.
 }
 \concept{durational}

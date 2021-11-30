@@ -10,8 +10,7 @@
 
 #' @templateVar name edges.ageinterval
 #' @title Number of edges with age falling into a specified range
-#' @description Number of edges with age falling into a specified range
-#' @details This term counts the number of edges in the network for
+#' @description This term counts the number of edges in the network for
 #'   which the time elapsed since formation is greater than or equal to
 #'   `from` but strictly less than `to` . In other words, it
 #'   is in the semiopen interval `[from, to)` .
@@ -50,10 +49,8 @@ else if(any(from>=to)) stop("Term edges.ageinterval must have from<to.")
 
 #' @templateVar name edge.ages
 #' @title Sum of ages of extant ties
-#' @description Sum of ages of extant ties
-#' @details This term adds one statistic equaling sum, over all ties
-#'   present in the network, of the amount of time elapsed since
-#'   formation.
+#' @description This term adds one statistic equaling sum, over all ties
+#'   present in the network, of the amount of time elapsed since formation.
 #'
 #'   Unlike [`mean.age`][mean.age-ergmTerm] , this statistic is well-defined on
 #'   an empty network. However, if used as a target, it appears to
@@ -79,10 +76,8 @@ InitErgmTerm.edge.ages<-function(nw, arglist, ...) {
 
 #' @templateVar name mean.age
 #' @title Average age of an extant tie
-#' @description Average age of an extant tie
-#' @details This term adds one statistic equaling the average, over all ties
-#'   present in the network, of the amount of time elapsed since
-#'   formation.
+#' @description This term adds one statistic equaling the average, over all ties
+#'   present in the network, of the amount of time elapsed since formation.
 #'
 #' @usage
 #' # binary: mean.age(emptyval=0, log=FALSE)
@@ -114,8 +109,7 @@ InitErgmTerm.mean.age<-function(nw, arglist, ...) {
 
 #' @templateVar name nodefactor.mean.age
 #' @title Average ages of extant half-ties incident on nodes of specified attribute levels
-#' @description Average ages of extant half-ties incident on nodes of specified attribute levels
-#' @details This term adds one statistic for each level of `attr` ,
+#' @description This term adds one statistic for each level of `attr` ,
 #'   equaling the average, over all half-ties incident on nodes of that level,
 #'   of the amount of time elapsed since formation.
 #'
@@ -184,8 +178,7 @@ InitErgmTerm.nodefactor.mean.age <- function(nw, arglist, ...) {
 
 #' @templateVar name nodemix.mean.age
 #' @title Average ages of extant ties of specified mixing types
-#' @description Average ages of extant ties of specified mixing types
-#' @details This term adds one statistic for each mixing type of `attr` ,
+#' @description This term adds one statistic for each mixing type of `attr` ,
 #'   equaling the average, over all ties of that mixing type,
 #'   of the amount of time elapsed since formation.
 #'
@@ -327,8 +320,7 @@ InitErgmTerm.nodemix.mean.age <- function(nw, arglist, ...) {
 
 #' @templateVar name edgecov.mean.age
 #' @title Weighted average age of an extant tie
-#' @description Weighted average age of an extant tie
-#' @details This term adds one statistic equaling the average, over all ties
+#' @description This term adds one statistic equaling the average, over all ties
 #'   present in the network, of the amount of time elapsed since
 #'   formation, weighted by a (nonnegative) dyadic covariate.
 #'
@@ -378,8 +370,7 @@ InitErgmTerm.edgecov.mean.age<-function(nw, arglist, ...) {
 
 #' @templateVar name edgecov.ages
 #' @title Weighted sum of ages of extant ties
-#' @description Weighted sum of ages of extant ties
-#' @details This term adds one statistic equaling sum, over all ties
+#' @description This term adds one statistic equaling sum, over all ties
 #'   present in the network, of the amount of time elapsed since
 #'   formation, multiplied by a dyadic covariate.
 #'
@@ -432,8 +423,7 @@ InitErgmTerm.edgecov.ages<-function(nw, arglist, ...) {
 
 #' @templateVar name degree.mean.age
 #' @title Average age of ties incident on nodes having a given degree
-#' @description Average age of ties incident on nodes having a given degree
-#' @details This term adds one
+#' @description This term adds one
 #'   network statistic to the model for each element in `d` ; the \eqn{i} th
 #'   such statistic equals the average, among all ties incident on nodes
 #'   with degree exactly `d[i]` , of the amount of time elapsed
@@ -499,8 +489,7 @@ InitErgmTerm.degree.mean.age<-function(nw, arglist, ...) {
 
 #' @templateVar name degrange.mean.age
 #' @title Average age of ties incident on nodes having degree in a given range
-#' @description Average age of ties incident on nodes having degree in a given range
-#' @details This term adds one
+#' @description This term adds one
 #'   network statistic to the model for each element of `from` (or `to` ); the \eqn{i} th
 #'   such statistic equals the average, among all ties incident on nodes
 #'   with degree greater than or equal to

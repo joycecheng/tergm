@@ -16,9 +16,6 @@ the name of the quantitative edge attribute to use for covariate values
 of zero).}
 }
 \description{
-Weighted sum of ages of extant ties
-}
-\details{
 This term adds one statistic equaling sum, over all ties
 present in the network, of the amount of time elapsed since
 formation, multiplied by a dyadic covariate.

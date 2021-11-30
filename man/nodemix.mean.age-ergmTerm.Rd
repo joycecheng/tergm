@@ -24,9 +24,6 @@ networks at the parameter configuration of interest is empty.}
 \item{log}{logical specifying if mean log age should be returned instead of mean age}
 }
 \description{
-Average ages of extant ties of specified mixing types
-}
-\details{
 This term adds one statistic for each mixing type of \code{attr} ,
 equaling the average, over all ties of that mixing type,
 of the amount of time elapsed since formation.

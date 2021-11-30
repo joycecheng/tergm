@@ -8,12 +8,8 @@
 # binary: edge.ages
 }
 \description{
-Sum of ages of extant ties
-}
-\details{
 This term adds one statistic equaling sum, over all ties
-present in the network, of the amount of time elapsed since
-formation.
+present in the network, of the amount of time elapsed since formation.
 
 Unlike \code{\link[=mean.age-ergmTerm]{mean.age}} , this statistic is well-defined on
 an empty network. However, if used as a target, it appears to

@@ -21,9 +21,6 @@ networks at the parameter configuration of interest is empty
 and/or if only a few dyads have nonzero weights.}
 }
 \description{
-Weighted average age of an extant tie
-}
-\details{
 This term adds one statistic equaling the average, over all ties
 present in the network, of the amount of time elapsed since
 formation, weighted by a (nonnegative) dyadic covariate.

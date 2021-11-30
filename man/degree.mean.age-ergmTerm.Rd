@@ -21,9 +21,6 @@ networks at the parameter configuration of interest has no actors
 with specified degree.}
 }
 \description{
-Average age of ties incident on nodes having a given degree
-}
-\details{
 This term adds one
 network statistic to the model for each element in \code{d} ; the \eqn{i} th
 such statistic equals the average, among all ties incident on nodes

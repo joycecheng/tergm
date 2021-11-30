@@ -11,9 +11,6 @@
 \item{formula}{model formula}
 }
 \description{
-The Formation Operator Term
-}
-\details{
 This term accepts a model formula
 and produces the corresponding model for the post-formation network:
 effectively a network containing both previous time step's ties and ties just formed,

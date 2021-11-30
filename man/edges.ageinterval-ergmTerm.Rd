@@ -11,9 +11,6 @@
 \item{from, to}{parameters to specify the lower bound and strict upper bounds. Can be scalars, vectors of the same length, or one of them must have length one, in which case it is recycled.}
 }
 \description{
-Number of edges with age falling into a specified range
-}
-\details{
 This term counts the number of edges in the network for
 which the time elapsed since formation is greater than or equal to
 \code{from} but strictly less than \code{to} . In other words, it

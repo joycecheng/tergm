@@ -21,8 +21,7 @@ stopifnot_dynamic <- function(nw, ..., dynamic=FALSE, .netseries.OK=FALSE){
 
 #' @templateVar name Form
 #' @title The Formation Operator Term
-#' @description The Formation Operator Term
-#' @details This term accepts a model formula
+#' @description This term accepts a model formula
 #'   and produces the corresponding model for the post-formation network:
 #'   effectively a network containing both previous time step's ties and ties just formed,
 #'   the union of the previous and current network. This is the equivalent of the
@@ -72,13 +71,12 @@ InitErgmTerm..union.lt.net<-function(nw, arglist, ...) {
 
 #' @templateVar name Persist
 #' @title The Persistence Operator Term
-#' @description The Persistence Operator Term
-#' @details This term accepts a model formula
+#' @description This term accepts a model formula
 #'   and produces the corresponding model for the
 #'   post-dissolution/persistence network: effectively the network containing
 #'   ties that persisted since the last time step.
 #'
-#'   This is the equivalent of the old-style `dissolution` model. So
+#' @details This is the equivalent of the old-style `dissolution` model. So
 #'   a larger positive coefficient for `Persist()` operator means
 #'   less dissolution. It
 #'   produces the same results as the new `Diss()` operator, except the
@@ -113,12 +111,11 @@ InitErgmTerm..union.lt.net<-function(nw, arglist, ...) {
 
 #' @templateVar name Diss
 #' @title The Dissolution Operator Term
-#' @description The Dissolution Operator Term
-#' @details This term accepts a model formula
+#' @description This term accepts a model formula
 #'   and produces the corresponding model for the post-dissolution
 #'   network (same as `Persist()` ), but with all statistics negated.
 #'
-#'   Note: This is not the equivalent of the old style `dissolution` model,
+#' @details Note: This is not the equivalent of the old style `dissolution` model,
 #'   because the signs of the coefficients are reversed. So a larger positive
 #'   coefficient for `Diss()` operator means more dissolution.
 #'
@@ -166,8 +163,7 @@ InitErgmTerm..intersect.lt.net<-function(nw, arglist, ...) {
 
 #' @templateVar name Change
 #' @title The Change Operator Term
-#' @description The Change Operator Term
-#' @details This term accepts a model formula
+#' @description This term accepts a model formula
 #'   and produces the corresponding model for a network constructed
 #'   by taking the dyads that have changed between time steps.
 #'

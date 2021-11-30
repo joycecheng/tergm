@@ -11,9 +11,6 @@
 \item{formula}{model formula}
 }
 \description{
-The Change Operator Term
-}
-\details{
 This term accepts a model formula
 and produces the corresponding model for a network constructed
 by taking the dyads that have changed between time steps.
